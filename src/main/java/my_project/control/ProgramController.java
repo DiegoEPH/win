@@ -2,7 +2,7 @@ package my_project.control;
 
 import KAGO_framework.control.ViewController;
 import KAGO_framework.model.abitur.datenstrukturen.Queue;
-import my_project.model.Ball;
+import my_project.model.*;
 import my_project.view.InputManager;
 
 import java.awt.event.MouseEvent;
@@ -36,8 +36,20 @@ public class ProgramController {
      */
     public void startProgram() {
         // Erstelle ein Objekt der Klasse Ball und lasse es zeichnen
-        Ball ball1 = new Ball(150,150);
-        viewController.draw(ball1);
+        Baum baum1 = new Baum(150,150);
+        viewController.draw(baum1);
+
+        Haus haus1 = new Haus(150,150);
+        viewController.draw(haus1);
+
+        Weihnachtsmann weihnachtsmann1 = new Weihnachtsmann(150,150);
+        viewController.draw(weihnachtsmann1);
+
+        Fenster fenster1 = new Fenster(150,150);
+        viewController.draw(fenster1);
+
+        Hintergrund hintergrund1 = new Hintergrund(0,0);
+        viewController.draw(hintergrund1);
 
     }
 
