@@ -21,5 +21,9 @@ public class Baum extends GraphicalObject {
         this.y = y;
     }
     public void draw(DrawTool drawTool) {
+        drawTool.setCurrentColor(new Color(75, 35, 0));
+        drawTool.drawFilledRectangle(x,y,50,50);
+        drawTool.setCurrentColor(new Color(0, 69, 7));
+        drawTool.drawFilledTriangle(25, 430, 225, 430, 125, 320);
     }
-    }
+}

@@ -22,8 +22,6 @@ public class Hintergrund extends GraphicalObject {
     }
     public void draw(DrawTool drawTool) {
         drawTool.setCurrentColor(Color.black);
-        drawTool.drawFilledRectangle(x,y,600,600);
-        drawTool.setCurrentColor(Color.white);
-        drawTool.drawFilledRectangle(x,450,600,600);
+        drawTool.drawFilledRectangle(x,y,5000,5000);
     }
 }

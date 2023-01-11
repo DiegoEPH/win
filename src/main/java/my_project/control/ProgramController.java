@@ -36,7 +36,13 @@ public class ProgramController {
      */
     public void startProgram() {
         // Erstelle ein Objekt der Klasse Ball und lasse es zeichnen
-        Baum baum1 = new Baum(150,150);
+        Hintergrund hintergrund1 = new Hintergrund(0,0);
+        viewController.draw(hintergrund1);
+
+        Schneeboden s1 = new Schneeboden(0, 400);
+        viewController.draw(s1);
+
+        Baum baum1 = new Baum(100,430);
         viewController.draw(baum1);
 
         Haus haus1 = new Haus(150,150);
@@ -48,8 +54,7 @@ public class ProgramController {
         Fenster fenster1 = new Fenster(150,150);
         viewController.draw(fenster1);
 
-        Hintergrund hintergrund1 = new Hintergrund(0,0);
-        viewController.draw(hintergrund1);
+
 
     }
 
